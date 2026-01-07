@@ -6,10 +6,16 @@ var ejs = require('ejs')
 const app = express()
 const port = 8000
 
+// Define our application-specific data
+// app.locals.appData = {appName: "FitApp"}
+
 // Tell Express that we want to use EJS as the templating engine
 app.set('view engine', 'ejs');
 
-// Load the route handlers
+// Set up public folder (for css and static js)
+app.use(express.static('public'))
+
+//Load the route handlers
 const mainRoutes = require("./routes/main");  
 app.use('/', mainRoutes);
 
