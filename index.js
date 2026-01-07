@@ -6,9 +6,6 @@ var ejs = require('ejs')
 const app = express()
 const port = 8000
 
-// Define our application-specific data
-// app.locals.appData = {appName: "FitApp"}
-
 // Tell Express that we want to use EJS as the templating engine
 app.set('view engine', 'ejs');
 
