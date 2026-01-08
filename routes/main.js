@@ -1,6 +1,7 @@
 // Create a new router
 const express = require("express");
 const router = express.Router();
+
 //Define our data
 var appData = {appName: "FitApp",
     categories:["Home", "About", "Add activities"]
