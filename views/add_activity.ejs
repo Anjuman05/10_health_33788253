@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Add an Activity</title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Add Activity</h1>
+    <form method="POST" action="/activities/added">
+        <p>Activity: <input id="activity" type="text" name="activity" /></p>
+        <p>Duration (in minutes): <input id="duration" type="number" name="duration" /></p>
+        <p>Date: <input id="activity_date" type="date" name="activity_date" /></p>
+        <p>Notes: <textarea name="notes"></textarea></p>
+        <input type="submit" value="Add" />
+      </form>
+  </body>
+</html>

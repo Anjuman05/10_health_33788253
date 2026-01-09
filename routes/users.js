@@ -9,7 +9,7 @@ var appData = {appName: "FitApp",
 };
 
 const redirectLogin = (req, res, next) => {
-    if (!req.session.userId ) {
+    if (!req.session.userID ) {
       res.redirect('/users/login') // redirect to the login page
     } else { 
         next (); // move to the next middleware function
@@ -33,12 +33,13 @@ router.post('/loggedin', function (req, res){
             return res.send("Database error");
         }
         if (results.length === 1 ){
-            req.session.userID = username;
-
-            res.send(`
-                <h1> Login Successful</h1>
-                <p>Welcome, ${username}</p>
-                <p> <a href="/"> Go to Home Page</a></p>`)
+            req.session.userID = results[0].username;
+            console.log("Login session:", req.session)
+            res.redirect('/activities')
+            // res.send(`
+            //     <h1> Login Successful</h1>
+            //     <p>Welcome, ${username}</p>
+            //     <p> <a href="/"> Go to Home Page</a></p>`)
         }else{
             res.send("Login failed: Invalid Username or Password");
         }

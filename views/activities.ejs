@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=appName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <a href="/activities/add"> Add Activity</a>
+    <ul>
+        <% activities.forEach(function(a) { %>
+        <li>
+            <strong><%= a.activity %></strong> -
+            <%= a.duration %> mins on
+            <%= a.activity_date %>
+        </li>
+    <% }) %>
+    </ul>
+    </body>
+</html>
