@@ -5,11 +5,12 @@
     <link rel="stylesheet"  type="text/css" href="/main.css" />
   </head>
   <body>
-    <h1>Search <%=appName%></h1>
-    <form action="/search_result" method="GET">
-      <p>What book do you want?</p>
-      <input id="search-box" type="text" name="search_text">
+    <h1>Search through your Activities <%=appName%></h1>
+    <form action="/activities/search" method="GET">
+      <p>What activity are you looking for?</p>
+      <input id="keyword" type="text" name="keyword">
       <input type="submit" value="Search" >
     </form>
+    <p><a href="/activities"> Back to activities</a></p>
   </body>
 </html>

@@ -16,15 +16,15 @@ router.get("/about", (req, res) => {
     res.render("about.ejs", appData)
 })
 
-router.get('/search', function(req, res, next){
-    res.render("search.ejs");
-});
+// router.get('/search', function(req, res, next){
+//     res.render("search.ejs");
+// });
 
-router.get('/search_result', function (req, res, next) {
-    //searching in the database
-    res.send(req.query);
-    //res.send("You searched for: " + req.query.keyword)
-});
+// router.get('/search_result', function (req, res, next) {
+//     //searching in the database
+//     res.send(req.query);
+//     //res.send("You searched for: " + req.query.keyword)
+// });
 
 // Export the router object so index.js can access it
 module.exports = router;

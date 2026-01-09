@@ -36,10 +36,7 @@ router.post('/loggedin', function (req, res){
             req.session.userID = results[0].username;
             console.log("Login session:", req.session)
             res.redirect('/activities')
-            // res.send(`
-            //     <h1> Login Successful</h1>
-            //     <p>Welcome, ${username}</p>
-            //     <p> <a href="/"> Go to Home Page</a></p>`)
+
         }else{
             res.send("Login failed: Invalid Username or Password");
         }
