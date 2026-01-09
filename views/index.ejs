@@ -6,11 +6,16 @@
   </head>
   <body>
     <h1>Welcome to The <%=appName%></h1>
-    <h2>Here are some things that we sell:</h2>
+    <h2>Here are some things that we do:</h2>
     <ul>
         <% for(let i = 0; i < categories.length; i++) { %>
             <li><%= categories[i] %></li>
         <% } %>
     </ul>
-    </body>
+    <h2>Navigation Links:</h2>
+    <br>
+    <p><a href="about">About Page</a></p>
+    <p><a href="activities">View your Activities</a></p>
+    <p><a href="/activities/add">Add a new Activity</a></p>
+  </body>
 </html>
