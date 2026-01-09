@@ -1,0 +1,5 @@
+home=http://www.doc.gold.ac.uk/usr/437/
+about=http://www.doc.gold.ac.uk/usr/437/about
+login=http://www.doc.gold.ac.uk/usr/437/users/login
+activities=http://www.doc.gold.ac.uk/usr/437/activities
+add_activities=http://www.doc.gold.ac.uk/usr/437/activities/add
