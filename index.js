@@ -1,5 +1,6 @@
 // Setup express and ejs
 require('dotenv').config();
+const basePath = process.env.HEALTH_BASE_PATH || '';
 
 var express = require ('express')
 var ejs = require('ejs')
